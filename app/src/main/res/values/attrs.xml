@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageTextCompoundWidget">
+        <attr name="myimage" format="reference|string|dimension"  />          <!--dimesionn type : dp 속성 줄때에 사용 -->
+        <attr name="membername" format="string"/>
+    </declare-styleable>
+</resources>

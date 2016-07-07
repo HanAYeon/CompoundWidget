@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:han="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ccei.compoundwidget.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="커스텀 복합 위젯"
+        android:gravity="center"
+        android:id="@+id/display_title" />
+
+    <com.example.ccei.compoundwidget.ImageTextCompoundWidget
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/compound_widget"
+        android:layout_below="@+id/display_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        han:membername="쀼뀨"
+        han:myimage="@mipmap/ic_launcher"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_below="@+id/compound_widget"
+        android:layout_centerInParent="true"
+        android:text="변시인!"
+        android:id="@+id/change_btn"/>
+
+    <!-- mipmap : 런처아이콘만 들어갈 수 있다.-->
+    <!--<com.example.ccei.listviewex.ImageTextCompoundWidget
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/compound_widget2"
+        android:layout_below="@+id/compound_widget"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+       -->
+
+
+</RelativeLayout>
